@@ -1,0 +1,67 @@
+[                                                                                                                                                                       
+    {"lastName":"Christensen","address":"42 Wonderwood Way","city":"Sandy","state":"Utah","postalCode":"84092", "people":[
+    	{"lastName":"Christensen","firstName":"Brent","birthDate":"12/13/65","gender":"M","address":"42 Wonderwood Way","city":"Sandy","state":"Utah","postalCode":"84092"},
+    	{"lastName":"Christensen","firstName":"Sharon","birthDate":"2/3/62","gender":"F","address":"42 Wonderwood Way","city":"Sandy","state":"Utah","postalCode":"84092"},
+    	{"lastName":"Christensen","firstName":"Jamie","birthDate":"3/4/88","gender":"F","address":"42 Wonderwood Way","city":"Sandy","state":"Utah","postalCode":"84092"},
+    	{"lastName":"Christensen","firstName":"Chase","birthDate":"6/13/90","gender":"M","address":"42 Wonderwood Way","city":"Sandy","state":"Utah","postalCode":"84092"},
+    	{"lastName":"Christensen","firstName":"Dayne","birthDate":"7/16/92","gender":"M","address":"42 Wonderwood Way","city":"Sandy","state":"Utah","postalCode":"84092"}    
+    ]},
+                                                                                                                                                               
+    {"lastName":"Evans","address":"4 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84093", "people": [
+    	{"lastName":"Evans","firstName":"David","birthDate":"8/11/51","gender":"M","address":"4 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84093"},
+    	{"lastName":"Evans","firstName":"Mary","birthDate":"6/17/50","gender":"F","address":"4 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84093"},
+    	{"lastName":"Evans","firstName":"Jill","birthDate":"9/10/86","gender":"F","address":"4 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84093"},
+    	{"lastName":"Evans","firstName":"Mike","birthDate":"12/13/88","gender":"M","address":"4 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84093"},
+    	{"lastName":"Evans","firstName":"Jeff","birthDate":"4/8/90","gender":"M","address":"4 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84093"}
+    ]},    
+                                                                                                                                                                 
+    {"lastName":"Allred","address":"5 Trendland Cove","city":"Sandy","state":"Utah","postalCode":"84094", "people": [
+    	{"lastName":"Allred","firstName":"Randy","birthDate":"5/23/70","gender":"M","address":"5 Trendland Cove","city":"Sandy","state":"Utah","postalCode":"84094"},
+    	{"lastName":"Allred","firstName":"Sue","birthDate":"5/22/65","gender":"F","address":"5 Trendland Cove","city":"Sandy","state":"Utah","postalCode":"84094"},
+    	{"lastName":"Allred","firstName":"Matt","birthDate":"7/29/88","gender":"M","address":"5 Trendland Cove","city":"Sandy","state":"Utah","postalCode":"84094"},
+    	{"lastName":"Allred","firstName":"Amanda","birthDate":"11/1/91","gender":"F","address":"5 Trendland Cove","city":"Sandy","state":"Utah","postalCode":"84094"}    
+    ]},    
+                                                                                                                                                             
+	{"lastName":"Jones","address":"1 Longwood Ln.","city":"Sandy","state":"Utah","postalCode":"84095", "people": [
+    	{"lastName":"Jones","firstName":"Paul","birthDate":"4/25/86","gender":"M","address":"1 Longwood Ln.","city":"Sandy","state":"Utah","postalCode":"84095"},
+    	{"lastName":"Jones","firstName":"Jill","birthDate":"9/10/86","gender":"F","address":"1 Longwood Ln.","city":"Sandy","state":"Utah","postalCode":"84095"}
+	]},                                 
+
+	{"lastName":"Johnsons","address":"7 Saddlewood Ln","city":"Sandy","state":"Utah","postalCode":"84096", "people": [
+    	{"lastName":"Johnsons","firstName":"Bryce","birthDate":"7/23/80","gender":"M","address":"7 Saddlewood Ln","city":"Sandy","state":"Utah","postalCode":"84096"},
+    	{"lastName":"Johnsons","firstName":"Becky","birthDate":"9/25/81","gender":"F","address":"7 Saddlewood Ln","city":"Sandy","state":"Utah","postalCode":"84096"},
+    	{"lastName":"Johnsons","firstName":"Issac","birthDate":"1/5/00","gender":"M","address":"7 Saddlewood Ln","city":"Sandy","state":"Utah","postalCode":"84096"},
+    	{"lastName":"Johnsons","firstName":"Luke","birthDate":"1/5/00","gender":"M","address":"7 Saddlewood Ln","city":"Sandy","state":"Utah","postalCode":"84096"}
+	]},
+	                                                                                                                                                           
+	{"lastName":"Fitts","address":"2 Courtside Ln.","city":"Sandy","state":"Utah","postalCode":"84097", "people": [
+    	{"lastName":"Fitts","firstName":"David","birthDate":"3/23/86","gender":"M","address":"2 Courtside Ln.","city":"Sandy","state":"Utah","postalCode":"84097"},
+    	{"lastName":"Fitts","firstName":"Clair","birthDate":"5/4/85","gender":"F","address":"2 Courtside Ln.","city":"Sandy","state":"Utah","postalCode":"84097"},
+    	{"lastName":"Fitts","firstName":"Jenny","birthDate":"9/1/11","gender":"F","address":"2 Courtside Ln.","city":"Sandy","state":"Utah","postalCode":"84097"}
+	]},	
+
+	{"lastName":"Wilson","address":"6 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84098", "people": [
+    	{"lastName":"Wilson","firstName":"Steve","birthDate":"5/16/88","gender":"M","address":"6 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84098"},
+    	{"lastName":"Wilson","firstName":"Shawna","birthDate":"7/18/92","gender":"F","address":"6 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84098"},
+    	{"lastName":"Wilson","firstName":"Jorie","birthDate":"5/23/94","gender":"F","address":"6 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84098"},
+    	{"lastName":"Wilson","firstName":"Amanda","birthDate":"12/21/98","gender":"F","address":"6 Ravenwood Ln.","city":"Sandy","state":"Utah","postalCode":"84098"}
+	]},
+	
+    {"lastName":"McIntyre","address":"4 Eaglewood Ln.","city":"Sandy","state":"Utah","postalCode":"84099", "people": [
+        {"lastName":"McIntyre","firstName":"Bill","birthDate":"3/6/60","gender":"M","address":"4 Eaglewood Ln.","city":"Sandy","state":"Utah","postalCode":"84099"},
+        {"lastName":"McIntyre","firstName":"Rika","birthDate":"7/14/61","gender":"F","address":"4 Eaglewood Ln.","city":"Sandy","state":"Utah","postalCode":"84099"}
+    ]},
+	
+    {"lastName":"Farley","address":"2 Fawn Grove Ln.","city":"Sandy","state":"Utah","postalCode":"84100", "people": [
+        {"lastName":"Farley","firstName":"Tony","birthDate":"1/13/88","gender":"M","address":"2 Fawn Grove Ln.","city":"Sandy","state":"Utah","postalCode":"84100"},
+        {"lastName":"Farley","firstName":"Julie","birthDate":"8/23/89","gender":"F","address":"2 Fawn Grove Ln.","city":"Sandy","state":"Utah","postalCode":"84100"}
+    ]},
+
+    {"lastName":"Turley","address":"5 Swallow Wood Ln.","city":"Sandy","state":"Utah","postalCode":"84101", "people": [
+        {"lastName":"Turley","firstName":"Jared","birthDate":"10/10/70","gender":"M","address":"5 Swallow Wood Ln.","city":"Sandy","state":"Utah","postalCode":"84101"},
+        {"lastName":"Turley","firstName":"Mariah","birthDate":"11/11/71","gender":"F","address":"5 Swallow Wood Ln.","city":"Sandy","state":"Utah","postalCode":"84101"},
+        {"lastName":"Turley","firstName":"Lisa","birthDate":"2/2/90","gender":"F","address":"5 Swallow Wood Ln.","city":"Sandy","state":"Utah","postalCode":"84101"},
+        {"lastName":"Turley","firstName":"Ray","birthDate":"3/3/92","gender":"M","address":"5 Swallow Wood Ln.","city":"Sandy","state":"Utah","postalCode":"84101"},
+        {"lastName":"Turley","firstName":"Bobby","birthDate":"4/4/94","gender":"M","address":"5 Swallow Wood Ln.","city":"Sandy","state":"Utah","postalCode":"84101"}
+    ]}
+]

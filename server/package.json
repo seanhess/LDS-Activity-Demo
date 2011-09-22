@@ -1,0 +1,38 @@
+{
+    "name": "actives",
+    "description": "demo active/less active map app",
+    "version": "0.1.0",
+    "repository": "ssh://git@github.com/idottv/common.git",
+    
+	"directories": {
+        "lib": "lib"
+    },
+    
+	"scripts": {
+        "test": "node test.js"
+    },
+
+    "engines": {
+        "node": "0.4.x" 
+    },
+
+    "dependencies": {
+    	"connect": "1.x.x",
+        "express": "2.3.x",
+        "underscore": "1.1.5",
+        "imagemagick": "0.1.2",
+        "mail": "0.2.3",
+        "node-expat": "1.2.0",
+        "oauth": "0.9.0",
+        "mustache": "0.3.1-dev",
+        "base64": "2.0.x",
+        "cluster": "0.6.x",
+        "connect-form":"0.2.1" 
+    },
+
+	"devDependencies": {
+        "async_testing": "0.3.2",	
+        "expresso": "0.7.x",	
+        "should":"0.0.4"	
+	}
+}
