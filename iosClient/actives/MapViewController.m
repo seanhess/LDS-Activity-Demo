@@ -10,6 +10,7 @@
 #import "PeopleService.h"
 #import "Family.h"
 #import "FamilyLocation.h"
+#import "FamilyViewController.h"
 
 #define MetersPerMile 1609.344
 
@@ -82,6 +83,8 @@
  
         annotationView.enabled = YES;
         annotationView.canShowCallout = YES;
+        annotationView.animatesDrop = YES;        
+        annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
  
         if ([Family isActive:location.family])
             annotationView.pinColor = MKPinAnnotationColorGreen;
@@ -94,6 +97,27 @@
  
     return nil;    
 }
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+
+    FamilyLocation * location = (FamilyLocation *)view.annotation;
+    NSDictionary * family = location.family;
+    
+    // Push the detail view on to the stack, baby. 
+    
+    FamilyViewController * familyViewController = [[FamilyViewController alloc] initWithFamily:family];
+    [self.navigationController pushViewController:familyViewController animated:YES];
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
+
+}
+
+- (void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
+
+}
+
+
 
 - (void)viewDidUnload
 {

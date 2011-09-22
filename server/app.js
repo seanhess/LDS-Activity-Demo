@@ -10,7 +10,11 @@ exports.createServer = function() {
     var app = express.createServer()   
     var mockDir = path.join(__dirname, "mock")
     
+    var cachedFamilies = null
+    
     app.get('/families', function(req, res) {
+        if (cachedFamilies) return res.send(cachedFamilies)
+        
         fs.readFile(path.join(mockDir, "families.json"), function(err, data) {
             if (err) return res.send(err)
             var families = JSON.parse(data.toString())
@@ -27,8 +31,9 @@ exports.createServer = function() {
             })                                                                
             
             function finish(err) {     
-                if (err) return res.send(err)
-                res.send(families)                
+                if (err) return res.send(err) 
+                cachedFamilies = families
+                res.send(cachedFamilies)                
             }
         })
     })

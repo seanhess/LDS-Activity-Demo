@@ -12,6 +12,8 @@
 		7831AC17142B2BAB00A84410 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7831AC15142B2BAB00A84410 /* MapViewController.xib */; };
 		7831AC1A142B2E9400A84410 /* Family.m in Sources */ = {isa = PBXBuildFile; fileRef = 7831AC19142B2E9400A84410 /* Family.m */; };
 		7831AC1E142B34DE00A84410 /* FamilyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7831AC1D142B34DE00A84410 /* FamilyLocation.m */; };
+		7831AC22142B3AA200A84410 /* FamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7831AC20142B3AA200A84410 /* FamilyViewController.m */; };
+		7831AC23142B3AA200A84410 /* FamilyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7831AC21142B3AA200A84410 /* FamilyViewController.xib */; };
 		786FDC171429790B0070B092 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786FDC161429790B0070B092 /* UIKit.framework */; };
 		786FDC191429790B0070B092 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786FDC181429790B0070B092 /* Foundation.framework */; };
 		786FDC1B1429790B0070B092 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786FDC1A1429790B0070B092 /* CoreGraphics.framework */; };
@@ -57,6 +59,9 @@
 		7831AC19142B2E9400A84410 /* Family.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Family.m; sourceTree = "<group>"; };
 		7831AC1C142B34DE00A84410 /* FamilyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyLocation.h; sourceTree = "<group>"; };
 		7831AC1D142B34DE00A84410 /* FamilyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyLocation.m; sourceTree = "<group>"; };
+		7831AC1F142B3AA200A84410 /* FamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyViewController.h; sourceTree = "<group>"; };
+		7831AC20142B3AA200A84410 /* FamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyViewController.m; sourceTree = "<group>"; };
+		7831AC21142B3AA200A84410 /* FamilyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilyViewController.xib; sourceTree = "<group>"; };
 		786FDC121429790B0070B092 /* actives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = actives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786FDC161429790B0070B092 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		786FDC181429790B0070B092 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -195,6 +200,9 @@
 				7831AC15142B2BAB00A84410 /* MapViewController.xib */,
 				7831AC1C142B34DE00A84410 /* FamilyLocation.h */,
 				7831AC1D142B34DE00A84410 /* FamilyLocation.m */,
+				7831AC1F142B3AA200A84410 /* FamilyViewController.h */,
+				7831AC20142B3AA200A84410 /* FamilyViewController.m */,
+				7831AC21142B3AA200A84410 /* FamilyViewController.xib */,
 				786FDCBB14297B830070B092 /* External */,
 				786FDC1D1429790B0070B092 /* Supporting Files */,
 			);
@@ -354,6 +362,7 @@
 			files = (
 				786FDC211429790B0070B092 /* InfoPlist.strings in Resources */,
 				7831AC17142B2BAB00A84410 /* MapViewController.xib in Resources */,
+				7831AC23142B3AA200A84410 /* FamilyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +401,7 @@
 				7831AC16142B2BAB00A84410 /* MapViewController.m in Sources */,
 				7831AC1A142B2E9400A84410 /* Family.m in Sources */,
 				7831AC1E142B34DE00A84410 /* FamilyLocation.m in Sources */,
+				7831AC22142B3AA200A84410 /* FamilyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
