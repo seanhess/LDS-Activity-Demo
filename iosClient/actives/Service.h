@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define Domain @"http://localhost:2555"
+#define Domain @"http://dmeo.seanhess.net:2555"
 
 @interface Service : NSObject
 
