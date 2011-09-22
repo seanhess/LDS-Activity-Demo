@@ -14,6 +14,8 @@
 +(double)lat:(NSDictionary*)family;
 +(double)lon:(NSDictionary*)family;
 +(NSString*)name:(NSDictionary*)family;
++(BOOL)isActive:(NSDictionary*)family;
++(NSString*)status:(NSDictionary*)family;
 +(CLLocationCoordinate2D)coordinate:(NSDictionary*)family;
 
 +(MKCoordinateRegion)centerRegionForFamilies:(NSArray*)families;

@@ -23,6 +23,14 @@
     return [family objectForKey:@"lastName"];
 }
 
++(BOOL)isActive:(NSDictionary*)family {
+    return [[self status:family] isEqualToString:@"active"];
+}
+
++(NSString*)status:(NSDictionary*)family {
+    return [family objectForKey:@"status"];     
+}
+
 +(CLLocationCoordinate2D)coordinate:(NSDictionary*)family {
     CLLocationCoordinate2D coordinate;
     coordinate.latitude = [self lat:family];

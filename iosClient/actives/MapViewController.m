@@ -66,6 +66,35 @@
     
 }
 
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+ 
+    static NSString *identifier = @"FamilyLocation";   
+
+    if ([annotation isKindOfClass:[FamilyLocation class]]) {
+        FamilyLocation *location = (FamilyLocation *) annotation;
+ 
+        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (annotationView == nil) {
+            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        } else {
+            annotationView.annotation = annotation;
+        }
+ 
+        annotationView.enabled = YES;
+        annotationView.canShowCallout = YES;
+ 
+        if ([Family isActive:location.family])
+            annotationView.pinColor = MKPinAnnotationColorGreen;
+            
+        else 
+            annotationView.pinColor = MKPinAnnotationColorRed;
+            
+        return annotationView;
+    }
+ 
+    return nil;    
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];

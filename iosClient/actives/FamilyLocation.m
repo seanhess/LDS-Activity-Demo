@@ -25,7 +25,7 @@
 }
 
 -(NSString*)subtitle {
-    return @"Nothing Yet";
+    return [Family status:self.family];
 }
 
 -(CLLocationCoordinate2D)coordinate {
