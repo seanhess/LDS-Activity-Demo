@@ -10,8 +10,9 @@
 // http://www.raywenderlich.com/2847/introduction-to-mapkit-on-ios-tutorial
 
 #import <Foundation/Foundation.h>
+#import "Service.h"
 
-@interface PeopleService : NSObject
+@interface PeopleService : Service
 
 +(void)loadPeople:(void(^)(NSArray*))callback;
 +(void)loadFamilies:(void(^)(NSArray*))callback;

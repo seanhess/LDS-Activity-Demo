@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7831AC12142B23C200A84410 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 7831AC11142B23C200A84410 /* Service.m */; };
 		786FDC171429790B0070B092 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786FDC161429790B0070B092 /* UIKit.framework */; };
 		786FDC191429790B0070B092 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786FDC181429790B0070B092 /* Foundation.framework */; };
 		786FDC1B1429790B0070B092 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786FDC1A1429790B0070B092 /* CoreGraphics.framework */; };
@@ -44,11 +45,11 @@
 		786FDD67142985F40070B092 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 786FDD59142985F40070B092 /* SBJsonTokeniser.m */; };
 		786FDD68142985F40070B092 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 786FDD5B142985F40070B092 /* SBJsonUTF8Stream.m */; };
 		786FDD69142985F40070B092 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 786FDD5D142985F40070B092 /* SBJsonWriter.m */; };
-		786FDD6B142986640070B092 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 786FDD6A142986630070B092 /* people.json */; };
-		786FDD6D142988910070B092 /* families.json in Resources */ = {isa = PBXBuildFile; fileRef = 786FDD6C142988910070B092 /* families.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7831AC10142B23C200A84410 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		7831AC11142B23C200A84410 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
 		786FDC121429790B0070B092 /* actives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = actives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786FDC161429790B0070B092 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		786FDC181429790B0070B092 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,7 +93,6 @@
 		786FDCDF14297C5F0070B092 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		786FDCE114297C690070B092 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		786FDCE314297C700070B092 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		786FDD18142982E80070B092 /* mock */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mock; sourceTree = "<group>"; };
 		786FDD1A142983090070B092 /* PeopleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleService.h; sourceTree = "<group>"; };
 		786FDD1B142983090070B092 /* PeopleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleService.m; sourceTree = "<group>"; };
 		786FDD45142985F40070B092 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
@@ -120,8 +120,6 @@
 		786FDD5B142985F40070B092 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		786FDD5C142985F40070B092 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		786FDD5D142985F40070B092 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		786FDD6A142986630070B092 /* people.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = people.json; path = mock/people.json; sourceTree = "<group>"; };
-		786FDD6C142988910070B092 /* families.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = families.json; path = mock/families.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +144,6 @@
 		786FDC071429790B0070B092 = {
 			isa = PBXGroup;
 			children = (
-				786FDD6C142988910070B092 /* families.json */,
-				786FDD6A142986630070B092 /* people.json */,
-				786FDD18142982E80070B092 /* mock */,
 				786FDC1C1429790B0070B092 /* actives */,
 				786FDC151429790B0070B092 /* Frameworks */,
 				786FDC131429790B0070B092 /* Products */,
@@ -256,6 +251,8 @@
 		786FDD1D1429830F0070B092 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7831AC10142B23C200A84410 /* Service.h */,
+				7831AC11142B23C200A84410 /* Service.m */,
 				786FDD1A142983090070B092 /* PeopleService.h */,
 				786FDD1B142983090070B092 /* PeopleService.m */,
 			);
@@ -345,8 +342,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				786FDD6D142988910070B092 /* families.json in Resources */,
-				786FDD6B142986640070B092 /* people.json in Resources */,
 				786FDC211429790B0070B092 /* InfoPlist.strings in Resources */,
 				786FDC301429790B0070B092 /* MasterViewController.xib in Resources */,
 				786FDC331429790B0070B092 /* DetailViewController.xib in Resources */,
@@ -386,6 +381,7 @@
 				786FDD67142985F40070B092 /* SBJsonTokeniser.m in Sources */,
 				786FDD68142985F40070B092 /* SBJsonUTF8Stream.m in Sources */,
 				786FDD69142985F40070B092 /* SBJsonWriter.m in Sources */,
+				7831AC12142B23C200A84410 /* Service.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +503,7 @@
 				786FDC381429790B0070B092 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
