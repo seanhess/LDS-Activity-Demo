@@ -12,8 +12,8 @@
 
 @interface FamilyLocation : NSObject <MKAnnotation>
 
-@property (strong, nonatomic) NSDictionary * family;
+@property (strong, nonatomic) NSMutableDictionary * family;
 
--(id)initWithFamily:(NSDictionary*)family;
+-(id)initWithFamily:(NSMutableDictionary*)family;
 
 @end

@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NoteViewController.h"
 
-@interface FamilyViewController : UIViewController
+@interface FamilyViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIPopoverControllerDelegate, NoteViewControllerDelegate>
 
-@property (strong, nonatomic) NSDictionary * family;
+@property (strong, nonatomic) NSMutableDictionary * family;
 
--(id)initWithFamily:(NSDictionary*)family;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) UIPopoverController *notePopover;
+@property (strong, nonatomic) NoteViewController *noteViewController;
+
+-(id)initWithFamily:(NSMutableDictionary*)family;
 
 @end

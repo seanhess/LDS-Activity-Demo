@@ -13,7 +13,7 @@
 
 @synthesize family;
 
--(id)initWithFamily:(NSDictionary*)fam {
+-(id)initWithFamily:(NSMutableDictionary*)fam {
     if ((self = [super init])) {
         self.family = fam;
     }

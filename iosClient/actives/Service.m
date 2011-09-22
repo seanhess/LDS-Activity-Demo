@@ -22,11 +22,25 @@
     callback(parsed);
 }
 
-+(void)loadJSONFromURL:(NSString*)urlString method:(NSString*)method callback:(void(^)(NSArray*))callback {
++(void)loadJSONFromURL:(NSString*)urlString method:(NSString*)method callback:(void(^)(id))callback {
+    [self loadJSONFromURL:urlString method:method body:nil callback:callback];
+}
+
++(void)loadJSONFromURL:(NSString*)urlString method:(NSString*)method body:(NSString*)body callback:(void(^)(id))callback {
+
     urlString = [Domain stringByAppendingString:urlString];
+    
     NSURL * url = [NSURL URLWithString:urlString];
     __weak ASIHTTPRequest * request = [ASIHTTPRequest requestWithURL:url];
+    
     request.requestMethod = method;
+
+    if (body) {
+        SBJsonWriter * writer = [[SBJsonWriter alloc] init];
+        request.postBody = [NSMutableData dataWithData:[writer dataWithObject:body]];
+        [request addRequestHeader:@"Content-Type" value:@"application/json"];
+    }
+    
     [request setCompletionBlock:^{
         NSData * data = [request responseData];
         SBJsonParser * parser = [SBJsonParser new];

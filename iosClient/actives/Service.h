@@ -13,6 +13,7 @@
 @interface Service : NSObject
 
 +(void)loadJSONFromBundle:(NSString*)fileName callback:(void(^)(NSArray*))callback;
-+(void)loadJSONFromURL:(NSString*)url method:(NSString*)method callback:(void(^)(NSArray*))callback;
++(void)loadJSONFromURL:(NSString*)url method:(NSString*)method callback:(void(^)(id))callback;
++(void)loadJSONFromURL:(NSString*)urlString method:(NSString*)method body:(NSDictionary*)body callback:(void(^)(id))callback;
 
 @end

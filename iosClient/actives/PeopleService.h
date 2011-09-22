@@ -16,5 +16,8 @@
 
 +(void)loadPeople:(void(^)(NSArray*))callback;
 +(void)loadFamilies:(void(^)(NSArray*))callback;
++(void)loadFamily:(NSDictionary*)family callback:(void(^)(NSMutableDictionary*))callback;
+
++(void)saveNote:(NSString*)note family:(NSDictionary*)family callback:(void(^)(NSObject*))callback;
 
 @end

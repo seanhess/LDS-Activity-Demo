@@ -60,7 +60,7 @@
         [self.mapView removeAnnotation:annotation];
         
     // add new ones
-    for (NSDictionary * family in families) {
+    for (NSMutableDictionary * family in families) {
         FamilyLocation * annotation = [[FamilyLocation alloc] initWithFamily:family];
         [self.mapView addAnnotation:annotation];
     }
@@ -101,7 +101,7 @@
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
 
     FamilyLocation * location = (FamilyLocation *)view.annotation;
-    NSDictionary * family = location.family;
+    NSMutableDictionary * family = location.family;
     
     // Push the detail view on to the stack, baby. 
     

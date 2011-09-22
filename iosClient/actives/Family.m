@@ -11,6 +11,10 @@
 
 @implementation Family
 
++(NSString*)uid:(NSDictionary*)family {
+    return [family objectForKey:@"uid"];
+}
+
 +(double)lat:(NSDictionary*)family {
     return [[family objectForKey:@"lat"] doubleValue];
 }
@@ -30,6 +34,27 @@
 +(NSString*)status:(NSDictionary*)family {
     return [family objectForKey:@"status"];     
 }
+
++(NSString*)fullAddress:(NSDictionary*)family {
+    return [NSString stringWithFormat:@"%@ %@, %@ %@", [family objectForKey:@"address"], [family objectForKey:@"city"], [family objectForKey:@"state"], [family objectForKey:@"postalCode"]];
+}
+
++(NSArray*)people:(NSDictionary*)family {
+    return [family objectForKey:@"people"];     
+}
+
++(void)addNote:(NSString*)note family:(NSMutableDictionary*)family {
+    NSArray * notes = [self notes:family];
+    if (!notes) notes = [NSArray array];
+    NSMutableArray * newNotes = [NSMutableArray arrayWithArray:notes];
+    [newNotes addObject:note];
+    [family setObject:newNotes forKey:@"notes"];
+}
+
++(NSArray*)notes:(NSDictionary*)family {
+    return [family objectForKey:@"notes"];
+}
+
 
 +(CLLocationCoordinate2D)coordinate:(NSDictionary*)family {
     CLLocationCoordinate2D coordinate;
@@ -77,6 +102,29 @@
     region.center=center;
     
     return region;
+}
+
+
+
+
+
+
+
+
+
+
+
+
++(NSString*)fullName:(NSDictionary*)person {
+    return [[person objectForKey:@"firstName"] stringByAppendingFormat:@" %@", [person objectForKey:@"lastName"]];
+}
+
++(NSString*)birthDate:(NSDictionary*)person {
+    return [person objectForKey:@"birthDate"];
+}
+
++(NSString*)gender:(NSDictionary*)person {
+    return [person objectForKey:@"gender"];    
 }
 
 
