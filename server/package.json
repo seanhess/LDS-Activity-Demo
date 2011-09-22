@@ -9,6 +9,7 @@
     },
 
     "dependencies": {
-        "express": "2.3.x"
+        "express": "2.3.x",
+        "underscore": "1.1.x"        
     }
 }
