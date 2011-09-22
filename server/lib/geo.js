@@ -58,7 +58,7 @@ exports.locationForSearch = function(query, cb) {
           
           */
         
-        cb(null, {lat: placemark.Point.coordinates[0], lon: placemark.Point.coordinates[1]})
+        cb(null, {lon: placemark.Point.coordinates[0], lat: placemark.Point.coordinates[1]})
     })
 }
 

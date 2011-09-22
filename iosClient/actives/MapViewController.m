@@ -8,6 +8,10 @@
 
 #import "MapViewController.h"
 #import "PeopleService.h"
+#import "Family.h"
+#import "FamilyLocation.h"
+
+#define MetersPerMile 1609.344
 
 @implementation MapViewController
 @synthesize mapView;
@@ -36,9 +40,29 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    self.navigationItem.title = @"Families";
+        
+    // load people
     [PeopleService loadFamilies:^(NSArray * families) {
-        NSLog(@"FAMILIES %@", [families objectAtIndex:0]);
+        [self plot:families];
     }];    
+    
+}
+
+- (void)plot:(NSArray*)families {
+    // move the map
+    MKCoordinateRegion adjustedRegion = [self.mapView regionThatFits:[Family centerRegionForFamilies:families]];
+    [self.mapView setRegion:adjustedRegion animated:YES];
+    
+    // remove old ones
+    for (id<MKAnnotation> annotation in self.mapView.annotations)
+        [self.mapView removeAnnotation:annotation];
+        
+    // add new ones
+    for (NSDictionary * family in families) {
+        FamilyLocation * annotation = [[FamilyLocation alloc] initWithFamily:family];
+        [self.mapView addAnnotation:annotation];
+    }
     
 }
 

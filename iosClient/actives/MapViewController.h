@@ -12,5 +12,5 @@
 @interface MapViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet MKMapView * mapView;
-
+- (void)plot:(NSArray*)families;
 @end
