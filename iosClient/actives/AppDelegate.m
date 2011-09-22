@@ -8,30 +8,25 @@
 
 #import "AppDelegate.h"
 
-#import "MasterViewController.h"
-
-#import "DetailViewController.h"
+#import "MapViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize splitViewController = _splitViewController;
+@synthesize masterNavigationController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
-    UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    MapViewController *mapViewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+    
+    UIViewController *masterViewController = mapViewController;
 
-    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-    UINavigationController *detailNavigationController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
+    self.masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
 
-    self.splitViewController = [[UISplitViewController alloc] init];
-    self.splitViewController.delegate = detailViewController;
-    self.splitViewController.viewControllers = [NSArray arrayWithObjects:masterNavigationController, detailNavigationController, nil];
-    self.window.rootViewController = self.splitViewController;
+    self.window.rootViewController = self.masterNavigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
