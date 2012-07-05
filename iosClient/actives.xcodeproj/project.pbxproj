@@ -131,6 +131,7 @@
 		786FDD5B142985F40070B092 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		786FDD5C142985F40070B092 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		786FDD5D142985F40070B092 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		7874DDE2142B8AB400FC127C /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +197,7 @@
 		786FDC1C1429790B0070B092 /* actives */ = {
 			isa = PBXGroup;
 			children = (
+				7874DDE2142B8AB400FC127C /* Entitlements.entitlements */,
 				7831AC1B142B2E9F00A84410 /* Data */,
 				786FDD1D1429830F0070B092 /* Services */,
 				786FDC251429790B0070B092 /* AppDelegate.h */,
@@ -483,12 +485,14 @@
 		786FDC371429790B0070B092 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = actives/Entitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sean Hess (S6829S2QT8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "actives/actives-Prefix.pch";
 				INFOPLIST_FILE = "actives/actives-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6399D31F-AD89-4F00-B908-1648F51B9CBC";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -496,12 +500,14 @@
 		786FDC381429790B0070B092 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = actives/Entitlements.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sean Hess (S6829S2QT8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "actives/actives-Prefix.pch";
 				INFOPLIST_FILE = "actives/actives-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6399D31F-AD89-4F00-B908-1648F51B9CBC";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
